@@ -47,4 +47,4 @@ app.get("/:aNumber", function (request, response) {
   response.json(cohortInfo);
 });
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
